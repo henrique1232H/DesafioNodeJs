@@ -7,6 +7,6 @@ const movieRoutes = Router();
 const movieController = new MovieController();
 
 
-movieRoutes.get("/", movieController.show)
+movieRoutes.post("/:user_id", movieController.createMovie)
 
 module.exports = movieRoutes

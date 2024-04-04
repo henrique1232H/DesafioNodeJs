@@ -14,5 +14,5 @@ api.use(routes)
 
 
 api.listen(PORT, () => {
-    console.log("funcionando...")
+    console.log(`Funcionando na porta :${PORT}`)
 })

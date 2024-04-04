@@ -7,6 +7,7 @@ const userRoutes = Router();
 const userController = new UserController();
 
 
-userRoutes.get("/",userController.show)
+userRoutes.post("/",userController.createUser);
+userRoutes.delete("/:id", userController.deleteUser)
 
 module.exports = userRoutes
